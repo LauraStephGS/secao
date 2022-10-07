@@ -1,0 +1,203 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 88.4rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 4.5rem;
+}
+
+.logo {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: #DFE2E8;
+
+}
+
+.logo strong{
+    color: #B67438;
+}
+
+.lista__menu{
+    display: flex;
+    list-style: none;
+    gap: 3.3rem;
+}
+
+.lista__menu a{
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: #DFE2E8;
+    text-decoration: none;
+}
+
+
+.hero{
+    height: 80vh;
+    background-color: #45649A;
+    background-image: url(../assets/textura.jpg);
+    background-blend-mode: multiply;
+    background-size: contain;
+    width: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+section h3{
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 29px;
+    text-transform: uppercase;
+    letter-spacing: 0.32rem;
+    color: #161D2B;
+    margin-bottom: 1.6rem;
+
+}
+
+section h1{
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 6.4rem;
+    color: #FFFFFF;
+    margin-bottom: 6.4rem;
+
+}
+
+.texto__colunas{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.texto__colunas__cabecalho{
+    text-align: center;
+    max-width: 41.9rem;
+    margin: auto;
+}
+
+h2{
+    font-family: 'Playfare Display';
+    font-weight: 700;
+    font-size: 3.6rem;
+    color: #131D30;
+}
+
+.texto__colunas__cabecalho p{
+    font-family: 'Lato';
+    font-weight: 600;
+    font-size: 2.0rem;
+    line-height: 2.4rem;
+    color: #131D30;
+    margin: 1.0rem;
+}
+
+.texto__colunas__conteudo{
+    display: flex;
+    gap: 17.5rem;
+    margin-top: 6rem;
+
+}
+
+.texto__colunas__conteudo p{
+    max-width: 36.9rem;
+
+}
+
+p{
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 145.6%;
+    color: #2F3D55;
+}
+
+.imagem__colunas{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212F49;
+}
+
+.imagem__colunas article{
+    display: flex;
+    width: 90.1rem;
+    justify-content: space-between;
+}
+
+.imagem__colunas__conteudo h2{
+    color: white;
+}
+.imagem__colunas__conteudo p{
+    width: 36.9rem;
+    margin-block:3rem ;
+    color: white;
+}
+.botao{
+    color: #F0B37C;
+    font-family: 'Lato';
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-decoration: none;
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 4.1rem;
+
+}
+
+.botao::after{
+    content: "";
+    width: 1rem;
+    height: 1.8rem;
+    background-image: url(../assets/seta.svg);
+    background-repeat: no-repeat;
+    transform: translateY(.5rem);
+    ;
+}
+
+.branco{
+    background-color: white;
+}
+.branco p,
+.branco h2{
+    color: #203049;
+}
+.branco img{
+    order: 1;
+}
+.icone{
+  animation: animacao-icone 800ms ease-in-out infinite alternate;
+} 
+
+
+@keyframes animacao-icone{
+    to{
+        transform: translateY(-1rem);
+    }
+    from{
+        transform: translateY(1rem);
+    }
+}
